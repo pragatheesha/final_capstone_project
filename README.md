@@ -1,4 +1,4 @@
-# final_capstone_project
+# Final_capstone_project
 # End-to-End Customer Analytics & Churn Prediction System
 
 ## Project Overview
