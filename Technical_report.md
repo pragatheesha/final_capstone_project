@@ -148,13 +148,13 @@ The ROC curve demonstrated the trade-off between sensitivity and specificity.
 
 The Random Forest model achieved strong ROC-AUC performance, indicating effective churn classification capability.
 
-9. Cross-Validation
+## 9. Cross-Validation
 
 Cross-validation was applied to validate model stability.
 
 The mean cross-validation accuracy confirmed consistent predictive performance and minimized variance across folds.
 
-10. Feature Importance Analysis
+## 10. Feature Importance Analysis
 
 Random Forest feature importance analysis identified key churn drivers:
 
@@ -167,7 +167,7 @@ These features significantly influenced churn prediction.
 
 Feature importance analysis enhances explainability and supports business interpretation.
 
-11. Customer Segmentation
+## 11. Customer Segmentation
 
 Unsupervised learning using K-Means clustering was applied to identify customer segments.
 
