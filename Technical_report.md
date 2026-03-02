@@ -25,7 +25,7 @@ The primary dataset used in this project is:
 
 The dataset contains customer-level information including demographic details, service usage, billing data, contract type, and churn status.
 
-*Key Variables*
+**Key Variables**
 
 - Tenure – Duration of customer relationship (in months)
 - MonthlyCharges – Monthly subscription fee
@@ -41,13 +41,13 @@ The dataset includes both numerical and categorical variables, requiring preproc
 
 Data preprocessing was performed to ensure model reliability and consistency.
 
-*3.1 Data Cleaning* 
+**3.1 Data Cleaning** 
 
 - Duplicate records were removed.
 - Missing values were handled using forward filling or imputation where necessary.
 - Inconsistent data types were corrected.
 
-*3.2 Outlier Detection*
+**3.2 Outlier Detection**
 Outliers in numerical features (e.g., MonthlyCharges) were detected using the Interquartile Range (IQR) method.
 
 Formula used:
@@ -60,17 +60,17 @@ Observations outside this range were removed to reduce model distortion.
 
 Feature engineering was conducted to enhance predictive capability.
 
-*4.1 Customer Lifetime Value (CLV)*
+**4.1 Customer Lifetime Value (CLV)**
 - CLV = MonthlyCharges × Tenure
 
 Represents total revenue contribution of each customer.
 
-*4.2 Average Charge Per Tenure*
+**4.2 Average Charge Per Tenure**
 - Avg_Charge_Per_Tenure = TotalCharges / (Tenure + 1)
 
 Captures billing consistency and customer payment behavior.
 
-*4.3 Tenure Grouping*
+**4.3 Tenure Grouping**
 
 Customers were categorized into lifecycle groups:
 
@@ -101,12 +101,12 @@ Pipeline-based preprocessing prevents data leakage and supports production deplo
 
 Two supervised learning models were implemented:
 
-*6.1 Decision Tree Classifier*
+**6.1 Decision Tree Classifier**
 
 - Simple interpretable model
 - Baseline comparison model
 
-*6.2 Random Forest Classifier*
+**6.2 Random Forest Classifier**
 
 - Ensemble-based model
 - Higher predictive accuracy
@@ -133,7 +133,7 @@ Models were evaluated using multiple metrics:
 - F1-Score
 - ROC-AUC Score
 
-*8.1 Confusion Matrix*
+**8.1 Confusion Matrix**
 
 A confusion matrix heatmap was generated to visualize:
 
@@ -142,7 +142,7 @@ A confusion matrix heatmap was generated to visualize:
 - False Positives
 - False Negatives
 
-*8.2 ROC Curve*
+**8.2 ROC Curve**
 
 The ROC curve demonstrated the trade-off between sensitivity and specificity.
 
@@ -177,7 +177,7 @@ Three distinct clusters were identified:
 - Loyal long-term customers
 - Medium-risk customers
 
-*PCA Visualization*
+**PCA Visualization**
 
 Principal Component Analysis (PCA) reduced dimensionality to 2 components for cluster visualization.
 
@@ -192,18 +192,18 @@ Segmentation supports targeted retention strategies.
 
 Random Forest outperformed Decision Tree and was selected as the final predictive model.
 
-13. Limitations
+## 13. Limitations
 
 - Dataset limited to historical customer data
 - No external demographic enrichment
 - Model performance may vary in real-time deployment
 - Advanced ensemble methods (e.g., XGBoost) not implemented
 
-14. Conclusion
+## 14. Conclusion
 
 This project successfully implemented a complete end-to-end machine learning workflow for churn prediction and customer segmentation.
 
-*Key achievements:*
+**Key achievements:**
 
 - Robust preprocessing pipeline
 - Advanced feature engineering
@@ -215,10 +215,9 @@ The Random Forest model demonstrated strong predictive performance, while segmen
 
 This system enables businesses to proactively reduce churn, optimize retention strategies, and enhance customer lifetime value.
 
-15. Future Improvements
+## 15. Future Improvements
 
 - Implement Gradient Boosting / XGBoost
 - Deploy real-time prediction API
 - Integrate with CRM systems
-
-Implement automated model monitoring
+- Implement automated model monitoring
