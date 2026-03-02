@@ -168,7 +168,7 @@ It enables data-driven decision-making and structured retention strategies align
 - Real-time deployment not yet integrated
 - Future deployment integration can enhance effectiveness.
 
-10. Conclusion
+## 10. Conclusion
 
 The developed churn prediction and segmentation system provides a comprehensive analytical framework for understanding customer behavior and reducing churn risk.
 
